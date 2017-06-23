@@ -1,0 +1,892 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<LiEvent>
+  <ExportInformation>
+    <Date>131407202573385496</Date>
+    <DllVersion>1.5.5899.26092</DllVersion>
+    <SessionLength>1107913000</SessionLength>
+  </ExportInformation>
+  <SessionInformation>
+    <Information>
+      <Name>Database</Name>
+      <Value>Sys5PALAPP4M</Value>
+    </Information>
+    <Information>
+      <Name>Date/Time</Name>
+      <Value>11/20/2015 9:48:58 AM</Value>
+    </Information>
+    <Information>
+      <Name>Environment</Name>
+      <Value>Chamber2 [2]</Value>
+    </Information>
+    <Information>
+      <Name>Machine Name</Name>
+      <Value>CI-22970-1-PC</Value>
+    </Information>
+    <Information>
+      <Name>Analysis Name</Name>
+      <Value>PAL Analysis</Value>
+    </Information>
+    <Information>
+      <Name>Schedule Name</Name>
+      <Value>Mouse dPAL 1 v3</Value>
+    </Information>
+    <Information>
+      <Name>Guid</Name>
+      <Value></Value>
+    </Information>
+    <Information>
+      <Name>Schedule Run ID</Name>
+      <Value>214</Value>
+    </Information>
+    <Information>
+      <Name>Version</Name>
+      <Value>N/A</Value>
+    </Information>
+    <Information>
+      <Name>Version Name</Name>
+      <Value>Mouse dPAL 1 v3 vN/A</Value>
+    </Information>
+    <Information>
+      <Name>Animal ID</Name>
+      <Value>gt160a359</Value>
+    </Information>
+    <Information>
+      <Name>Application_Version</Name>
+      <Value>ABET II Touch 2.18.5274.14161</Value>
+    </Information>
+    <Information>
+      <Name>Max_Number_Trials</Name>
+      <Value>36</Value>
+    </Information>
+    <Information>
+      <Name>Max_Schedule_Time</Name>
+      <Value>3600</Value>
+    </Information>
+    <Information>
+      <Name>Schedule_Start_Time</Name>
+      <Value>2015-11-20T09:49:03.020</Value>
+    </Information>
+    <Information>
+      <Name>User</Name>
+      <Value>Dan</Value>
+    </Information>
+    <Information>
+      <Name>Weight(g)</Name>
+      <Value>16.6</Value>
+    </Information>
+  </SessionInformation>
+  <MarkerData>
+    <Marker>
+      <Name>End Summary - Condition</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>1107.913</Results>
+    </Marker>
+    <Marker>
+      <Name>End Summary - Trials Completed</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>36</Results>
+    </Marker>
+    <Marker>
+      <Name>End Summary - No Correction Trials</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>6</Results>
+    </Marker>
+    <Marker>
+      <Name>End Summary - % Correct</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>83.333</Results>
+    </Marker>
+    <Marker>
+      <Name>End Summary - Left ITI Touches</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>17</Results>
+    </Marker>
+    <Marker>
+      <Name>End Summary - Centre ITI Touches</Name>
+      <SourceType>Evaluation</SourceType>
+    </Marker>
+    <Marker>
+      <Name>End Summary - Right ITI Touches</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>14</Results>
+    </Marker>
+    <Marker>
+      <Name>End Summary - Touches to blank</Name>
+      <SourceType>Evaluation</SourceType>
+    </Marker>
+    <Marker>
+      <Name>12 Trial Block - Trials</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>342.195</Results>
+    </Marker>
+    <Marker>
+      <Name>12 Trial Block - Trials</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>671.525</Results>
+    </Marker>
+    <Marker>
+      <Name>12 Trial Block - Trials</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>1107.913</Results>
+    </Marker>
+    <Marker>
+      <Name>12 Trial Block - Correct Trial</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>11</Results>
+    </Marker>
+    <Marker>
+      <Name>12 Trial Block - Correct Trial</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>10</Results>
+    </Marker>
+    <Marker>
+      <Name>12 Trial Block - Correct Trial</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>9</Results>
+    </Marker>
+    <Marker>
+      <Name>12 Trial Block - Correct Percent</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>91.66666666666666666666666667</Results>
+    </Marker>
+    <Marker>
+      <Name>12 Trial Block - Correct Percent</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>87.500</Results>
+    </Marker>
+    <Marker>
+      <Name>12 Trial Block - Correct Percent</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>83.33333333333333333333333333</Results>
+    </Marker>
+    <Marker>
+      <Name>12 Trial Block - Trials Count</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>12</Results>
+    </Marker>
+    <Marker>
+      <Name>12 Trial Block - Trials Count</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>12</Results>
+    </Marker>
+    <Marker>
+      <Name>12 Trial Block - Trials Count</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>12</Results>
+    </Marker>
+    <Marker>
+      <Name>12 Trial Block - Block Percent Correct</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>91.66666666666666666666666667</Results>
+    </Marker>
+    <Marker>
+      <Name>12 Trial Block - Block Percent Correct</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>83.33333333333333333333333333</Results>
+    </Marker>
+    <Marker>
+      <Name>12 Trial Block - Block Percent Correct</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>75.00</Results>
+    </Marker>
+    <Marker>
+      <Name>12 Trial Block - Correction Trials</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>1</Results>
+    </Marker>
+    <Marker>
+      <Name>12 Trial Block - Correction Trials</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>1</Results>
+    </Marker>
+    <Marker>
+      <Name>12 Trial Block - Correction Trials</Name>
+      <SourceType>Evaluation</SourceType>
+      <Results>4</Results>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>3776000</Time>
+      <Duration>1493000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>26979000</Time>
+      <Duration>1913000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>84946000</Time>
+      <Duration>3005000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>110551000</Time>
+      <Duration>1766000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>135570000</Time>
+      <Duration>1640000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>160707000</Time>
+      <Duration>1064000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>185379000</Time>
+      <Duration>1593000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>212269000</Time>
+      <Duration>3304000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>240103000</Time>
+      <Duration>1924000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>267337000</Time>
+      <Duration>2145000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>292253000</Time>
+      <Duration>1972000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>317515000</Time>
+      <Duration>1572000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>342245000</Time>
+      <Duration>1387000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>365434000</Time>
+      <Duration>1267000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>390013000</Time>
+      <Duration>1909000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>414715000</Time>
+      <Duration>1317000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>441425000</Time>
+      <Duration>2077000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>467250000</Time>
+      <Duration>1459000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>490946000</Time>
+      <Duration>1633000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>513628000</Time>
+      <Duration>1799000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>568220000</Time>
+      <Duration>2925000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>594889000</Time>
+      <Duration>2047000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>619372000</Time>
+      <Duration>1236000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>671590000</Time>
+      <Duration>1430000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>698535000</Time>
+      <Duration>1028000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>722691000</Time>
+      <Duration>1159000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>775205000</Time>
+      <Duration>1328000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>827936000</Time>
+      <Duration>5675000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>883379000</Time>
+      <Duration>4437000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>912935000</Time>
+      <Duration>5460000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>940337000</Time>
+      <Duration>2221000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>967286000</Time>
+      <Duration>2369000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>993215000</Time>
+      <Duration>4236000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>1022674000</Time>
+      <Duration>1318000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>1046465000</Time>
+      <Duration>3033000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>1071142000</Time>
+      <Duration>2938000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Incorrect Touch Latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>52900000</Time>
+      <Duration>3172000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Incorrect Touch Latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>537245000</Time>
+      <Duration>4405000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Incorrect Touch Latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>644534000</Time>
+      <Duration>1257000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Incorrect Touch Latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>748548000</Time>
+      <Duration>1273000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Incorrect Touch Latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>799981000</Time>
+      <Duration>1116000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Incorrect Touch Latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>855882000</Time>
+      <Duration>1997000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Left touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>3776000</Time>
+      <Duration>1493000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Left touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>110551000</Time>
+      <Duration>1766000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Left touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>185379000</Time>
+      <Duration>1593000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Left touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>390013000</Time>
+      <Duration>1909000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Left touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>441425000</Time>
+      <Duration>2077000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Left touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>467250000</Time>
+      <Duration>1459000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Left touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>671590000</Time>
+      <Duration>1430000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Left touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>698535000</Time>
+      <Duration>1028000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Left touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>883379000</Time>
+      <Duration>4437000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Left touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>993215000</Time>
+      <Duration>4236000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Left touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>1046465000</Time>
+      <Duration>3033000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Left touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>1071142000</Time>
+      <Duration>2938000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Centre touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>26979000</Time>
+      <Duration>1913000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Centre touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>84946000</Time>
+      <Duration>3005000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Centre touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>212269000</Time>
+      <Duration>3304000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Centre touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>240103000</Time>
+      <Duration>1924000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Centre touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>267337000</Time>
+      <Duration>2145000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Centre touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>292253000</Time>
+      <Duration>1972000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Centre touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>490946000</Time>
+      <Duration>1633000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Centre touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>513628000</Time>
+      <Duration>1799000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Centre touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>568220000</Time>
+      <Duration>2925000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Centre touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>594889000</Time>
+      <Duration>2047000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Centre touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>775205000</Time>
+      <Duration>1328000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Centre touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>827936000</Time>
+      <Duration>5675000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Right touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>135570000</Time>
+      <Duration>1640000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Right touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>160707000</Time>
+      <Duration>1064000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Right touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>317515000</Time>
+      <Duration>1572000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Right touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>342245000</Time>
+      <Duration>1387000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Right touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>365434000</Time>
+      <Duration>1267000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Right touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>414715000</Time>
+      <Duration>1317000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Right touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>619372000</Time>
+      <Duration>1236000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Right touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>722691000</Time>
+      <Duration>1159000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Right touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>912935000</Time>
+      <Duration>5460000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Right touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>940337000</Time>
+      <Duration>2221000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Right touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>967286000</Time>
+      <Duration>2369000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Right touch latency</Name>
+      <SourceType>Measure</SourceType>
+      <Time>1022674000</Time>
+      <Duration>1318000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>5269000</Time>
+      <Duration>1078000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>28892000</Time>
+      <Duration>1095000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>87951000</Time>
+      <Duration>1320000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>112317000</Time>
+      <Duration>1077000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>137210000</Time>
+      <Duration>1005000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>161771000</Time>
+      <Duration>1282000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>186972000</Time>
+      <Duration>1225000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>215573000</Time>
+      <Duration>1309000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>242027000</Time>
+      <Duration>1313000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>269482000</Time>
+      <Duration>942000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>294225000</Time>
+      <Duration>1971000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>319087000</Time>
+      <Duration>1089000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>343632000</Time>
+      <Duration>1246000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>366701000</Time>
+      <Duration>1387000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>391922000</Time>
+      <Duration>1097000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>416032000</Time>
+      <Duration>1400000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>443502000</Time>
+      <Duration>1171000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>468709000</Time>
+      <Duration>1252000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>492579000</Time>
+      <Duration>1040000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>515427000</Time>
+      <Duration>1543000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>571145000</Time>
+      <Duration>1037000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>596936000</Time>
+      <Duration>1044000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>620608000</Time>
+      <Duration>1131000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>673020000</Time>
+      <Duration>997000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>699563000</Time>
+      <Duration>1185000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>723850000</Time>
+      <Duration>1366000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>776533000</Time>
+      <Duration>1248000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>833611000</Time>
+      <Duration>1123000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>887816000</Time>
+      <Duration>1133000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>918395000</Time>
+      <Duration>1253000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>942558000</Time>
+      <Duration>1120000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>969655000</Time>
+      <Duration>1029000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>997451000</Time>
+      <Duration>1410000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>1023992000</Time>
+      <Duration>995000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>1049498000</Time>
+      <Duration>1463000</Duration>
+    </Marker>
+    <Marker>
+      <Name>Correct Reward Collection</Name>
+      <SourceType>Measure</SourceType>
+      <Time>1074080000</Time>
+      <Duration>1403000</Duration>
+    </Marker>
+  </MarkerData>
+</LiEvent>
