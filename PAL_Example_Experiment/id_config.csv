@@ -1,0 +1,17 @@
+[QC Analysis],,,,,,,
+QC = ,PAL_QC,,,,,,
+,,,,,,,
+[Animal ID List],,,,,,,
+ID,DOB,Factor1,Factor2,Aliases,,,
+gt160a359,18/10/13,Tg,Female,gt160a359,gt16a359,gt160359,
+gt159a354,17/10/13,Tg,Female,gt159a354,gt159a35,gt159A354,GT159A354
+END_LIST,,,,,,,
+,,,,,,,
+[Example],,,,,,,
+In the cell beside 'QC = ' add the appropriate Quality Control File,,,,,,,
+Your Animal ID List must contain at least (ID,Aliases, & DOB). You can add as many IV following as desired.,,,,,
+ID: The exact mouse ID you want reported. Aliases: Any mistyping or alternate names the same animal may go by. Must be at the end of your data. Can use as many columns as needed. Include main ID always!!! DOB: Birthdate of animal in the following format dd/mm/yyyy,,,,,,,
+Your last ID information should be in the row before END. You may add as many rows as needed,,,,,,,
+Example:,,,,,,,
+ID,DOB,Sex,Genotype,Strain, Aliases,,
+gt01x01,1/1/2015,Female,WT,3xTG,gt01x1,gt1x01,gtt01x01

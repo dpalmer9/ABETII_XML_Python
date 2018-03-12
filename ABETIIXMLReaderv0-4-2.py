@@ -424,10 +424,6 @@ def Folder_Monitor(folder_list):
             qc_dataframe_list[dataframe] = combined_data
 
 
-        qc_file_list = ['active_day_main_results', 'active_day_acq_results', 'active_day_punish_results',
-                        'active_day_initiate_results', 'active_day_touch_results', 'active_day_initial_results',
-                        'active_day_habit2_results', 'active_day_habit1_results']
-        qc_active_list = list()
 
         day_qc_string = '%s.QC_Day(dataframe_list=qc_dataframe_list, exp_dir=exp_dir)' % (qc_file)
         qc_dataframe_list = eval(day_qc_string)
@@ -440,6 +436,12 @@ def Folder_Monitor(folder_list):
             tracking_data = tracking_raw[tracked_cols]
             tracking_list.append(tracking_data)
         main_tracking_data = pd.concat(tracking_list, ignore_index=True)
+        main_tracking_data = main_tracking_data.T.groupby(level=0).first().T
+        main_tracking_data = main_tracking_data[tracked_cols]
+        if os.path.isfile(tracking_file_path):
+            tracking_csv = pd.read_csv(tracking_file_path)
+            main_tracking_data = main_tracking_data.append(tracking_csv, ignore_index=True)
+            main_tracking_data = main_tracking_data[tracked_cols]
 
         tracking_animal_list = main_tracking_data['AnimalID'].tolist()
         tracking_animal_list = list(set(tracking_animal_list))
@@ -458,14 +460,11 @@ def Folder_Monitor(folder_list):
 
         main_tracking_data = main_tracking_data.T.groupby(level=0).first().T
         main_tracking_data = main_tracking_data[tracked_cols]
-        if os.path.isfile(tracking_file_path):
-            tracking_csv = open(tracking_file_path, 'a')
-            main_tracking_data.to_csv(tracking_csv, header=False, index=False)
-            tracking_csv.close()
-        elif not os.path.isfile(tracking_file_path):
-            tracking_csv = open(tracking_file_path, 'w')
-            main_tracking_data.to_csv(tracking_csv, index=False)
-            tracking_csv.close()
+
+
+        tracking_csv = open(tracking_file_path, 'w')
+        main_tracking_data.to_csv(tracking_csv, index=False)
+        tracking_csv.close()
 
         csv_save_string = "%s.QC_DayWrite(dataframe_list=qc_dataframe_list,exp_dir=exp_dir)" % (qc_file)
         exec(csv_save_string)

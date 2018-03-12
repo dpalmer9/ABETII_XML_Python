@@ -314,11 +314,29 @@ def QC_DayWrite(dataframe_list,exp_dir):
     for dataframe in range(0,len(dataframe_list)):
         combined_data = dataframe_list[dataframe]
         combined_data = combined_data.loc[:,~combined_data.columns.duplicated()]
+        combined_colnames = combined_data.columns.values.tolist()
 
         if combined_data['AnalysisName'].iat[0] == QC_Analysis_Names[0]:
             if os.stat(pal_filepath).st_size != 0:
                 pal_main_data_main = pd.read_csv(pal_filepath)
+                pal_main_data_colnames = pal_main_data_main.columns.values.tolist()
+                new_var_list = list(set(combined_colnames)^set(pal_main_data_colnames))
+                if len(new_var_list) > 0:
+                    for a in range(0,len(new_var_list)):
+                        new_var = new_var_list[a]
+                        var_char_length = len(new_var)
+                        final_occurance = 0
+                        if new_var[(var_char_length - 3)] == ".":
+                            search_var = new_var[:(var_char_length - 3)]
+                            for b in range(0, len(pal_main_data_colnames)):
+                                if search_var in pal_main_data_colnames[b]:
+                                    final_occurance = b
+                            final_occurance += 1
+                            pal_main_data_colnames.insert(final_occurance, new_var)
+                        elif new_var[(var_char_length - 3)] != ".":
+                            pal_main_data_colnames.append(new_var)
                 pal_main_data_main = pd.concat([pal_main_data_main,combined_data], ignore_index = True, verify_integrity=True)
+                pal_main_data_main = pal_main_data_main[pal_main_data_colnames]
                 pal_main_data_main.to_csv(pal_filepath, index=False)
             elif os.stat(pal_filepath).st_size == 0:
                 combined_data.to_csv(pal_filepath, index=False)
@@ -326,7 +344,24 @@ def QC_DayWrite(dataframe_list,exp_dir):
         if combined_data['AnalysisName'].iat[0] == QC_Analysis_Names[1]:
             if os.stat(pal_acq_filepath).st_size != 0:
                 pal_acq_data_acq = pd.read_csv(pal_acq_filepath)
-                pal_acq_data_acq = pd.concat([pal_acq_data_acq,combined_data], ignore_index = True)
+                pal_acq_data_colnames = pal_acq_data_acq.columns.values.tolist()
+                new_var_list = list(set(combined_colnames)^set(pal_acq_data_colnames))
+                if len(new_var_list) > 0:
+                    for a in range(0,len(new_var_list)):
+                        new_var = new_var_list[a]
+                        var_char_length = len(new_var)
+                        final_occurance = 0
+                        if new_var[(var_char_length - 3)] == ".":
+                            search_var = new_var[:(var_char_length - 3)]
+                            for b in range(0, len(pal_acq_data_colnames)):
+                                if search_var in pal_acq_data_colnames[b]:
+                                    final_occurance = b
+                            final_occurance += 1
+                            pal_acq_data_colnames.insert(final_occurance, new_var)
+                        elif new_var[(var_char_length - 3)] != ".":
+                            pal_acq_data_colnames.append(new_var)
+                pal_acq_data_acq = pd.concat([pal_acq_data_acq,combined_data], ignore_index = True, verify_integrity=True)
+                pal_acq_data_acq = pal_acq_data_acq[pal_acq_data_colnames]
                 pal_acq_data_acq.to_csv(pal_acq_filepath, index=False)
             elif os.stat(pal_acq_filepath).st_size == 0:
                 combined_data.to_csv(pal_acq_filepath, index=False)
@@ -334,7 +369,24 @@ def QC_DayWrite(dataframe_list,exp_dir):
         if combined_data['AnalysisName'].iat[0] == QC_Analysis_Names[2]:
             if os.stat(pal_punish_filepath).st_size != 0:
                 pal_punish_data_punish = pd.read_csv(pal_punish_filepath)
-                pal_punish_data_punish = pd.concat([pal_punish_data_punish,combined_data], ignore_index = True)
+                pal_punish_data_colnames = pal_punish_data_punish.columns.values.tolist()
+                new_var_list = list(set(combined_colnames)^set(pal_punish_data_colnames))
+                if len(new_var_list) > 0:
+                    for a in range(0,len(new_var_list)):
+                        new_var = new_var_list[a]
+                        var_char_length = len(new_var)
+                        final_occurance = 0
+                        if new_var[(var_char_length - 3)] == ".":
+                            search_var = new_var[:(var_char_length - 3)]
+                            for b in range(0, len(pal_punish_data_colnames)):
+                                if search_var in pal_punish_data_colnames[b]:
+                                    final_occurance = b
+                            final_occurance += 1
+                            pal_punish_data_colnames.insert(final_occurance, new_var)
+                        elif new_var[(var_char_length - 3)] != ".":
+                            pal_punish_data_colnames.append(new_var)
+                pal_punish_data_punish = pd.concat([pal_punish_data_punish,combined_data], ignore_index = True, verify_integrity=True)
+                pal_punish_data_punish = pal_punish_data_punish[pal_punish_data_colnames]
                 pal_punish_data_punish.to_csv(pal_punish_filepath, index=False)
             elif os.stat(pal_punish_filepath).st_size == 0:
                 combined_data.to_csv(pal_punish_filepath, index=False)
@@ -342,7 +394,24 @@ def QC_DayWrite(dataframe_list,exp_dir):
         if combined_data['AnalysisName'].iat[0] == QC_Analysis_Names[3]:
             if os.stat(pal_initiate_filepath).st_size != 0:
                 pal_initiate_data_initiate = pd.read_csv(pal_initiate_filepath)
-                pal_initiate_data_initiate = pd.concat([pal_initiate_data_initiate,combined_data], ignore_index = True)
+                pal_initiate_data_colnames = pal_initiate_data_initiate.columns.values.tolist()
+                new_var_list = list(set(combined_colnames)^set(pal_initiate_data_colnames))
+                if len(new_var_list) > 0:
+                    for a in range(0,len(new_var_list)):
+                        new_var = new_var_list[a]
+                        var_char_length = len(new_var)
+                        final_occurance = 0
+                        if new_var[(var_char_length - 3)] == ".":
+                            search_var = new_var[:(var_char_length - 3)]
+                            for b in range(0, len(pal_initiate_data_colnames)):
+                                if search_var in pal_initiate_data_colnames[b]:
+                                    final_occurance = b
+                            final_occurance += 1
+                            pal_initiate_data_colnames.insert(final_occurance, new_var)
+                        elif new_var[(var_char_length - 3)] != ".":
+                            pal_initiate_data_colnames.append(new_var)
+                pal_initiate_data_initiate = pd.concat([pal_initiate_data_initiate,combined_data], ignore_index = True, verify_integrity=True)
+                pal_initiate_data_initiate = pal_initiate_data_initiate[pal_initiate_data_colnames]
                 pal_initiate_data_initiate.to_csv(pal_initiate_filepath, index=False)
             elif os.stat(pal_initiate_filepath).st_size == 0:
                 combined_data.to_csv(pal_initiate_filepath, index=False)
@@ -350,7 +419,24 @@ def QC_DayWrite(dataframe_list,exp_dir):
         if combined_data['AnalysisName'].iat[0] == QC_Analysis_Names[4]:
             if os.stat(pal_touch_filepath).st_size != 0:
                 pal_touch_data_touch = pd.read_csv(pal_touch_filepath)
-                pal_touch_data_touch = pd.concat([pal_touch_data_touch,combined_data], ignore_index = True)
+                pal_touch_data_colnames = pal_touch_data_touch.columns.values.tolist()
+                new_var_list = list(set(combined_colnames)^set(pal_touch_data_colnames))
+                if len(new_var_list) > 0:
+                    for a in range(0,len(new_var_list)):
+                        new_var = new_var_list[a]
+                        var_char_length = len(new_var)
+                        final_occurance = 0
+                        if new_var[(var_char_length - 3)] == ".":
+                            search_var = new_var[:(var_char_length - 3)]
+                            for b in range(0, len(pal_touch_data_colnames)):
+                                if search_var in pal_touch_data_colnames[b]:
+                                    final_occurance = b
+                            final_occurance += 1
+                            pal_touch_data_colnames.insert(final_occurance, new_var)
+                        elif new_var[(var_char_length - 3)] != ".":
+                            pal_touch_data_colnames.append(new_var)
+                pal_touch_data_touch = pd.concat([pal_touch_data_touch,combined_data], ignore_index = True, verify_integrity=True)
+                pal_touch_data_touch = pal_touch_data_touch[pal_touch_data_colnames]
                 pal_touch_data_touch.to_csv(pal_touch_filepath, index=False)
             elif os.stat(pal_touch_filepath).st_size == 0:
                 combined_data.to_csv(pal_touch_filepath, index=False)
@@ -358,7 +444,24 @@ def QC_DayWrite(dataframe_list,exp_dir):
         if combined_data['AnalysisName'].iat[0] == QC_Analysis_Names[5]:
             if os.stat(pal_initial_filepath).st_size != 0:
                 pal_initial_data_initial = pd.read_csv(pal_initial_filepath)
-                pal_initial_data_initial = pd.concat([pal_initial_data_initial,combined_data], ignore_index = True)
+                pal_initial_data_colnames = pal_initial_data_initial.columns.values.tolist()
+                new_var_list = list(set(combined_colnames)^set(pal_initial_data_colnames))
+                if len(new_var_list) > 0:
+                    for a in range(0,len(new_var_list)):
+                        new_var = new_var_list[a]
+                        var_char_length = len(new_var)
+                        final_occurance = 0
+                        if new_var[(var_char_length - 3)] == ".":
+                            search_var = new_var[:(var_char_length - 3)]
+                            for b in range(0, len(pal_initial_data_colnames)):
+                                if search_var in pal_initial_data_colnames[b]:
+                                    final_occurance = b
+                            final_occurance += 1
+                            pal_initial_data_colnames.insert(final_occurance, new_var)
+                        elif new_var[(var_char_length - 3)] != ".":
+                            pal_initial_data_colnames.append(new_var)
+                pal_initial_data_initial = pd.concat([pal_initial_data_initial,combined_data], ignore_index = True, verify_integrity=True)
+                pal_initial_data_initial = pal_initial_data_initial[pal_initial_data_colnames]
                 pal_initial_data_initial.to_csv(pal_initial_filepath, index=False)
             elif os.stat(pal_initial_filepath).st_size == 0:
                 combined_data.to_csv(pal_initial_filepath, index=False)
@@ -366,7 +469,24 @@ def QC_DayWrite(dataframe_list,exp_dir):
         if combined_data['AnalysisName'].iat[0] == QC_Analysis_Names[6]:
             if os.stat(pal_hab2_filepath).st_size != 0:
                 pal_hab2_data_hab2 = pd.read_csv(pal_hab2_filepath)
-                pal_hab2_data_hab2 = pd.concat([pal_hab2_data_hab2,combined_data], ignore_index = True)
+                pal_hab2_data_colnames = pal_hab2_data_hab2.columns.values.tolist()
+                new_var_list = list(set(combined_colnames)^set(pal_hab2_data_colnames))
+                if len(new_var_list) > 0:
+                    for a in range(0,len(new_var_list)):
+                        new_var = new_var_list[a]
+                        var_char_length = len(new_var)
+                        final_occurance = 0
+                        if new_var[(var_char_length - 3)] == ".":
+                            search_var = new_var[:(var_char_length - 3)]
+                            for b in range(0, len(pal_hab2_data_colnames)):
+                                if search_var in pal_hab2_data_colnames[b]:
+                                    final_occurance = b
+                            final_occurance += 1
+                            pal_hab2_data_colnames.insert(final_occurance, new_var)
+                        elif new_var[(var_char_length - 3)] != ".":
+                            pal_hab2_data_colnames.append(new_var)
+                pal_hab2_data_hab2 = pd.concat([pal_hab2_data_hab2,combined_data], ignore_index = True, verify_integrity=True)
+                pal_hab2_data_hab2 = pal_hab2_data_hab2[pal_hab2_data_colnames]
                 pal_hab2_data_hab2.to_csv(pal_hab2_filepath, index=False)
             elif os.stat(pal_hab2_filepath).st_size == 0:
                 combined_data.to_csv(pal_hab2_filepath, index=False)
@@ -374,7 +494,24 @@ def QC_DayWrite(dataframe_list,exp_dir):
         if combined_data['AnalysisName'].iat[0] == QC_Analysis_Names[7]:
             if os.stat(pal_hab1_filepath).st_size != 0:
                 pal_hab1_data_hab1 = pd.read_csv(pal_hab1_filepath)
-                pal_hab1_data_hab1 = pd.concat([pal_hab1_data_hab1,combined_data], ignore_index = True)
+                pal_hab1_data_colnames = pal_hab1_data_hab1.columns.values.tolist()
+                new_var_list = list(set(combined_colnames)^set(pal_hab1_data_colnames))
+                if len(new_var_list) > 0:
+                    for a in range(0,len(new_var_list)):
+                        new_var = new_var_list[a]
+                        var_char_length = len(new_var)
+                        final_occurance = 0
+                        if new_var[(var_char_length - 3)] == ".":
+                            search_var = new_var[:(var_char_length - 3)]
+                            for b in range(0, len(pal_hab1_data_colnames)):
+                                if search_var in pal_hab1_data_colnames[b]:
+                                    final_occurance = b
+                            final_occurance += 1
+                            pal_hab1_data_colnames.insert(final_occurance, new_var)
+                        elif new_var[(var_char_length - 3)] != ".":
+                            pal_hab1_data_colnames.append(new_var)
+                pal_hab1_data_hab1 = pd.concat([pal_hab1_data_hab1,combined_data], ignore_index = True, verify_integrity=True)
+                pal_hab1_data_hab1 = pal_hab1_data_hab1[pal_hab1_data_colnames]
                 pal_hab1_data_hab1.to_csv(pal_hab1_filepath, index=False)
             elif os.stat(pal_hab1_filepath).st_size == 0:
                 combined_data.to_csv(pal_hab1_filepath, index=False)
